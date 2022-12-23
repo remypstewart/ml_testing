@@ -30,10 +30,7 @@ jobs:
         if: steps.cache-pipenv.outputs.cache-hit != 'true'
         run: |
           pipenv install --deploy
-    
-      - name: Model training
-        run: python model.py
 
       - name: Run test suite
         run: |
-          pipenv run pytest
+          pipenv run test
