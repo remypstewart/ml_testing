@@ -1,4 +1,5 @@
-name: ghactions-demo
+name: gh-actions-demo
+
 on:
   push:
     branches: [main]
